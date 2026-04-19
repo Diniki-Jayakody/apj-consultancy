@@ -8,6 +8,18 @@ import type {
   University,
 } from '../types'
 
+/** Full-width hero background (students / campus). */
+export const heroBackgroundImage = {
+  src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2000&q=80',
+  alt: 'Diverse university students collaborating outdoors on campus',
+}
+
+/** About page — professional office / teamwork. */
+export const aboutStudioImage = {
+  src: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80',
+  alt: 'Bright modern office space with collaborative seating',
+}
+
 export const services: ServiceItem[] = [
   {
     id: 'placement',
@@ -15,6 +27,8 @@ export const services: ServiceItem[] = [
     description:
       'Shortlist programs, refine your personal statement, and submit strong applications with structured timelines and document checklists.',
     iconClass: 'bi-mortarboard',
+    imageSrc: 'https://images.unsplash.com/photo-1434030216411-0b793f744b41?auto=format&fit=crop&w=900&q=80',
+    imageAlt: 'Laptop and notebook on a desk during study planning',
   },
   {
     id: 'visa',
@@ -22,6 +36,8 @@ export const services: ServiceItem[] = [
     description:
       'Financial evidence, credibility interviews, and CAS/LOA requirements explained in plain language so you feel prepared—not overwhelmed.',
     iconClass: 'bi-passport',
+    imageSrc: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80',
+    imageAlt: 'Airplane wing above clouds representing international travel',
   },
   {
     id: 'career',
@@ -29,6 +45,8 @@ export const services: ServiceItem[] = [
     description:
       'Align your strengths with employable pathways, internships, and post-study options that match your long-term goals.',
     iconClass: 'bi-graph-up-arrow',
+    imageSrc: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80',
+    imageAlt: 'Colleagues collaborating over charts in a modern workspace',
   },
   {
     id: 'scholarship',
@@ -36,6 +54,8 @@ export const services: ServiceItem[] = [
     description:
       'Identify merit and need-based opportunities, craft competitive essays, and track deadlines across institutions.',
     iconClass: 'bi-award',
+    imageSrc: 'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=80',
+    imageAlt: 'Students raising hands in a bright seminar classroom',
   },
 ]
 
@@ -48,6 +68,8 @@ export const destinations: Destination[] = [
       'Globally recognized degrees, shorter course lengths, and strong graduate employability—ideal for focused learners.',
     highlights: ['1-year masters options', 'Strong STEM & business hubs', 'Post-study Graduate Route'],
     popularSubjects: ['Business', 'Engineering', 'Law', 'Health sciences'],
+    imageSrc: 'https://images.unsplash.com/photo-1513635269976-596e1447262e?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'London skyline with Big Ben and Westminster at sunset',
   },
   {
     id: 'canada',
@@ -57,6 +79,8 @@ export const destinations: Destination[] = [
       'High quality of life, welcoming communities, and clear pathways from study to skilled work experience.',
     highlights: ['Co-op programs', 'PGWP options', 'Diverse campuses'],
     popularSubjects: ['Computer science', 'Data analytics', 'Healthcare', 'Hospitality'],
+    imageSrc: 'https://images.unsplash.com/photo-1517935701645-455cdfe57648?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Toronto cityscape with the CN Tower on a clear day',
   },
   {
     id: 'australia',
@@ -66,6 +90,8 @@ export const destinations: Destination[] = [
       'Research-led universities, vibrant cities, and practical courses designed with industry input.',
     highlights: ['Trimester intakes', 'Strong research funding', 'Student support services'],
     popularSubjects: ['IT', 'Environmental science', 'Nursing', 'Creative arts'],
+    imageSrc: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Sydney Opera House and harbour on a bright day',
   },
   {
     id: 'usa',
@@ -75,6 +101,8 @@ export const destinations: Destination[] = [
       'Flexible curricula, extensive campus resources, and unmatched networking across industries.',
     highlights: ['Optional Practical Training (OPT)', 'Scholarship diversity', 'Interdisciplinary majors'],
     popularSubjects: ['STEM', 'Economics', 'Liberal arts', 'Medicine (pre-med)'],
+    imageSrc: 'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Brooklyn Bridge and Manhattan skyline at dusk',
   },
 ]
 
@@ -137,6 +165,8 @@ export const testimonials: Testimonial[] = [
     author: 'Ananya R.',
     program: 'MSc Data Analytics',
     destination: 'United Kingdom',
+    avatarSrc: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&h=200&q=80',
+    avatarAlt: 'Portrait of a smiling student',
   },
   {
     id: 't2',
@@ -145,6 +175,8 @@ export const testimonials: Testimonial[] = [
     author: 'Marcus T.',
     program: 'BEng Software Engineering',
     destination: 'Canada',
+    avatarSrc: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80',
+    avatarAlt: 'Portrait of a student in a casual shirt',
   },
   {
     id: 't3',
@@ -153,6 +185,8 @@ export const testimonials: Testimonial[] = [
     author: 'Priya S.',
     program: 'MBA',
     destination: 'Australia',
+    avatarSrc: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&h=200&q=80',
+    avatarAlt: 'Portrait of a professional woman smiling',
   },
   {
     id: 't4',
@@ -161,6 +195,8 @@ export const testimonials: Testimonial[] = [
     author: 'Jordan L.',
     program: 'BA Economics',
     destination: 'United States',
+    avatarSrc: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80',
+    avatarAlt: 'Portrait of a student in glasses',
   },
 ]
 

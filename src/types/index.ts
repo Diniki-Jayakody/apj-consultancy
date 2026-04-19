@@ -3,6 +3,9 @@ export interface ServiceItem {
   title: string
   description: string
   iconClass: string
+  /** Small illustrative photo (e.g. Unsplash) */
+  imageSrc: string
+  imageAlt: string
 }
 
 export interface Destination {
@@ -12,6 +15,9 @@ export interface Destination {
   summary: string
   highlights: string[]
   popularSubjects: string[]
+  /** Landmark / campus style image */
+  imageSrc: string
+  imageAlt: string
 }
 
 export interface University {
@@ -28,6 +34,8 @@ export interface Testimonial {
   author: string
   program: string
   destination: string
+  avatarSrc: string
+  avatarAlt: string
 }
 
 export interface BlogPost {

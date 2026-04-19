@@ -1,7 +1,8 @@
 import { Section } from '../components/section/Section'
 import { SectionHeading } from '../components/section/SectionHeading'
+import { ResponsiveImage } from '../components/media/ResponsiveImage'
 import { usePageMeta } from '../hooks/usePageMeta'
-import { stats, teamMembers } from '../services/mockData'
+import { aboutStudioImage, stats, teamMembers } from '../services/mockData'
 
 export function AboutPage() {
   usePageMeta('About', 'Meet APJ Consultancy—mission, vision, and the counselors guiding international students to strong outcomes.')
@@ -10,20 +11,40 @@ export function AboutPage() {
     <>
       <section className="bg-apj-light border-bottom">
         <div className="container py-5 py-lg-6">
-          <p className="text-apj-accent fw-semibold text-uppercase small letter-spacing mb-2">About APJ</p>
-          <h1 className="display-5 fw-bold text-apj-primary mb-3">Independent guidance with institutional discipline.</h1>
-          <p className="lead text-secondary col-lg-9 mb-0">
-            APJ Consultancy exists because studying abroad should feel ambitious—not reckless. We combine admissions craft with visa realism, so families can
-            plan with confidence.
-          </p>
+          <div className="row g-4 g-lg-5 align-items-center">
+            <div className="col-lg-6 order-lg-2">
+              <div className="position-relative rounded-4 overflow-hidden shadow-lg apj-about-hero-frame">
+                <ResponsiveImage
+                  src={aboutStudioImage.src}
+                  alt={aboutStudioImage.alt}
+                  className="w-100 apj-about-hero-img"
+                  sizes="(max-width: 991px) 100vw, 50vw"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+                <div className="apj-about-hero-badge shadow">
+                  <div className="small text-uppercase text-secondary fw-semibold letter-spacing mb-1">Since day one</div>
+                  <div className="h5 fw-bold text-apj-primary mb-0">Clarity-first counseling</div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 order-lg-1">
+              <p className="text-apj-accent fw-semibold text-uppercase small letter-spacing mb-2">About APJ</p>
+              <h1 className="display-5 fw-bold text-apj-primary mb-3">Independent guidance with institutional discipline.</h1>
+              <p className="lead text-secondary mb-0 about-lead">
+                APJ Consultancy exists because studying abroad should feel ambitious—not reckless. We combine admissions craft with visa realism, so families can
+                plan with confidence.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <Section tone="white">
-        <div className="row g-4 align-items-start">
+        <div className="row g-4 g-lg-5 align-items-start">
           <div className="col-lg-6">
             <SectionHeading eyebrow="Introduction" title="Who we are" lead="A boutique consultancy focused on outcomes, transparency, and respectful communication." />
-            <p className="text-secondary">
+            <p className="text-secondary mb-3">
               Founded by counselors who have sat on both sides of the admissions desk, APJ helps students articulate credible goals, choose programs that match
               their trajectory, and navigate complex documentation without losing momentum.
             </p>
@@ -35,7 +56,7 @@ export function AboutPage() {
           <div className="col-lg-6">
             <div className="row g-3">
               <div className="col-md-6">
-                <div className="card h-100 border-0 shadow-sm">
+                <div className="card h-100 border-0 shadow-sm apj-card-hover apj-mission-card apj-border-start-accent">
                   <div className="card-body p-4">
                     <h2 className="h6 text-apj-accent text-uppercase mb-2">Mission</h2>
                     <p className="mb-0 text-secondary">
@@ -45,9 +66,9 @@ export function AboutPage() {
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="card h-100 border-0 shadow-sm">
+                <div className="card h-100 border-0 shadow-sm apj-card-hover apj-mission-card apj-border-start-navy">
                   <div className="card-body p-4">
-                    <h2 className="h6 text-apj-accent text-uppercase mb-2">Vision</h2>
+                    <h2 className="h6 text-apj-primary text-uppercase mb-2">Vision</h2>
                     <p className="mb-0 text-secondary">
                       A world where mobility is accessible, ethical, and aligned with long-term careers—not short-term trends.
                     </p>
@@ -61,12 +82,12 @@ export function AboutPage() {
 
       <Section tone="light" aria-labelledby="stats-heading">
         <SectionHeading id="stats-heading" eyebrow="Impact" title="Numbers that reflect consistency—not hype." align="center" />
-        <div className="row g-3 justify-content-center text-center">
+        <div className="row g-3 g-md-4 justify-content-center text-center">
           {stats.map((s) => (
             <div key={s.label} className="col-6 col-md-3">
-              <div className="card border-0 shadow-sm h-100">
+              <div className="card border-0 shadow-sm h-100 apj-stat-card apj-card-hover">
                 <div className="card-body p-4">
-                  <div className="display-6 fw-bold text-apj-primary">{s.value}</div>
+                  <div className="display-6 fw-bold text-apj-primary mb-1">{s.value}</div>
                   <div className="text-secondary small">{s.label}</div>
                 </div>
               </div>
@@ -88,7 +109,7 @@ export function AboutPage() {
               <div className="card h-100 border-0 shadow-sm apj-card-hover">
                 <div className="card-body p-4">
                   <div className="d-flex align-items-center gap-3 mb-3">
-                    <div className="rounded-circle bg-apj-light text-apj-primary fw-bold d-flex align-items-center justify-content-center apj-avatar" aria-hidden>
+                    <div className="rounded-circle bg-apj-light text-apj-primary fw-bold d-flex align-items-center justify-content-center apj-avatar shadow-sm" aria-hidden>
                       {m.name
                         .split(' ')
                         .map((p) => p[0])
