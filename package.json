@@ -3,14 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://diniki-jayakody.github.io/apj-consultancy",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
