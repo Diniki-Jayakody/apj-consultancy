@@ -1,0 +1,260 @@
+:root {
+  --apj-primary: #0f2847;
+  --apj-primary-2: #163b66;
+  --apj-accent: #c9a227;
+  --apj-accent-2: #e3c15a;
+  --apj-light: #f3f6fb;
+  --apj-muted: #eef2f8;
+  --apj-text: #1b2a41;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--apj-text);
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: Poppins, Inter, system-ui, sans-serif;
+}
+
+.text-apj-primary {
+  color: var(--apj-primary) !important;
+}
+
+.text-apj-accent {
+  color: var(--apj-accent) !important;
+}
+
+.bg-apj-primary {
+  background-color: var(--apj-primary) !important;
+}
+
+.bg-apj-light {
+  background-color: var(--apj-light) !important;
+}
+
+.bg-apj-muted {
+  background-color: var(--apj-muted) !important;
+}
+
+.bg-apj-gold {
+  background-color: var(--apj-accent) !important;
+}
+
+.letter-spacing {
+  letter-spacing: 0.08em;
+}
+
+.apj-brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--apj-primary), var(--apj-primary-2));
+  font-size: 0.85rem;
+}
+
+.navbar .nav-link.active {
+  color: var(--apj-primary) !important;
+}
+
+.btn-apj-primary {
+  background: linear-gradient(135deg, var(--apj-primary), var(--apj-primary-2));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.btn-apj-primary:hover {
+  filter: brightness(1.05);
+  color: #fff;
+}
+
+.btn-apj-secondary {
+  background: linear-gradient(135deg, var(--apj-accent), var(--apj-accent-2));
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #1b2a41;
+}
+
+.btn-apj-secondary:hover {
+  filter: brightness(1.03);
+  color: #1b2a41;
+}
+
+.btn-apj-outline {
+  background: transparent;
+  border: 1px solid rgba(15, 40, 71, 0.25);
+  color: var(--apj-primary);
+}
+
+.btn-apj-outline:hover {
+  border-color: rgba(15, 40, 71, 0.45);
+  color: var(--apj-primary);
+  background: rgba(15, 40, 71, 0.04);
+}
+
+.hero-outline-btn {
+  border-color: rgba(255, 255, 255, 0.55) !important;
+  color: #fff !important;
+}
+
+.hero-outline-btn:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
+
+.cta-outline {
+  border-color: rgba(255, 255, 255, 0.55) !important;
+  color: #fff !important;
+}
+
+.cta-outline:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
+
+.hero-apj {
+  background:
+    radial-gradient(900px 420px at 10% 0%, rgba(201, 162, 39, 0.35), transparent 60%),
+    radial-gradient(700px 380px at 90% 20%, rgba(255, 255, 255, 0.12), transparent 55%),
+    linear-gradient(135deg, #0b1f38, var(--apj-primary) 55%, #0a1a30);
+}
+
+.hero-card {
+  border-radius: 16px;
+}
+
+.apj-cta {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #123057, var(--apj-primary) 60%, #0b1f38);
+}
+
+.apj-card-hover {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  border-radius: 14px;
+}
+
+.apj-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.75rem 2rem rgba(15, 40, 71, 0.12) !important;
+}
+
+.apj-icon-tile {
+  width: 52px;
+  height: 52px;
+}
+
+.apj-uni-logo {
+  width: 56px;
+  height: 56px;
+  font-size: 0.75rem;
+}
+
+.apj-avatar {
+  width: 48px;
+  height: 48px;
+  font-size: 0.85rem;
+}
+
+.link-apj {
+  color: var(--apj-primary-2);
+  text-decoration-color: rgba(22, 59, 102, 0.35);
+}
+
+.link-apj:hover {
+  color: var(--apj-primary);
+}
+
+.apj-section-y {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .apj-section-y {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.py-lg-6 {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+}
+
+@media (min-width: 992px) {
+  .py-lg-6 {
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
+  }
+}
+
+.apj-timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .apj-timeline {
+    padding-left: 2.75rem;
+  }
+
+  .apj-timeline::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: rgba(15, 40, 71, 0.12);
+  }
+}
+
+.apj-timeline-item {
+  position: relative;
+}
+
+.apj-timeline-marker {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .apj-timeline-marker {
+    display: flex;
+    position: absolute;
+    left: -46px;
+    top: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid rgba(201, 162, 39, 0.85);
+    box-shadow: 0 8px 22px rgba(15, 40, 71, 0.12);
+  }
+}
+
+.apj-timeline-step {
+  font-weight: 700;
+  color: var(--apj-primary);
+  font-size: 0.9rem;
+}
